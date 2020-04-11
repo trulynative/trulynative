@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, Image, TouchableOpacity } from 'react-native';
 import { useTrulyNative } from '../../theming';
 import dynamicStyles from './styles';
+import TNIcon from '../TNIcon';
 
 const TNButton = ({
     containerStyle,
@@ -38,6 +39,7 @@ const TNButton = ({
             {text && (
                 <Text style={textStyles}>{text}</Text>
             )}
+            <TNIcon size={24} name="house"/>
         </TouchableOpacity>
     );
 };
